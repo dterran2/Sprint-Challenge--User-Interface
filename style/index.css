@@ -47,6 +47,9 @@ table {
 	border-spacing: 0;
 }
 
+/* -----------------------------------------------------------Resset above-------------------------------------------------------- */
+
+
 * {
     box-sizing: border-box;
 }
@@ -54,6 +57,8 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+}
+
 }
 
 h1, h2, h3, h4, h5 {
@@ -70,15 +75,122 @@ p {
     width: 800px;
     margin: 0 auto;
 }
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 20px; 
+}
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 20px;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
+.box1{
+    background-color: teal;
+    height:100px;
+    width: 100px;
+    margin: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2{
+    background-color: gold;
+    height:100px;
+    width: 100px;
+    margin: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box3{
+    background-color: cadetblue;
+    height:100px;
+    width: 100px;
+    margin: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box4{
+    background-color: coral;
+    height:100px;
+    width: 100px;
+    margin: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box5{
+    background-color: crimson;
+    height:100px;
+    width: 100px;
+    margin: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box6{
+    background-color: forestgreen;
+    height:100px;
+    width: 100px;
+    margin: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box7{
+    background-color: darkorchid;
+    height:100px;
+    width: 100px;
+    margin: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box8{
+    background-color: hotpink;
+    height:100px;
+    width: 100px;
+    margin: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box9{
+    background-color: indigo;
+    height:100px;
+    width: 100px;
+    margin: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box10{
+    background-color: dodgerblue;
+    height:100px;
+    width: 100px;
+    margin: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
@@ -104,7 +216,7 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -114,7 +226,7 @@ p {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 10px 2% 20px;
     justify-content: space-around;
 }
 
@@ -143,4 +255,56 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+} 
+
+/* -----------------------------------------------------------------------Media queries------------------------------------------------------------ */
+
+@media(max-width: 500px){
+    
+    .container .header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    a{
+        border-radius: 25px;
+        border: 1px solid black;
+        padding: 10px 70px;
+    }
+    .container .header .jumboImg{
+        width: 400px;
+    }
+    .top-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .boxes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .bottom-content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 800px){
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        margin: 20px; 
+    }
+
+    }
+    .container .header .jumboImg{
+        width: 400px;
+    }
+    .boxes{
+        display: flex;
+        
+}
 }
