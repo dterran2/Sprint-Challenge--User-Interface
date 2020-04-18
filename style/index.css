@@ -262,6 +262,7 @@ footer nav a {
 @media(max-width: 500px){
     
     .container .header nav{
+    
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -278,6 +279,7 @@ footer nav a {
     .top-content{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .boxes{
         display: flex;
